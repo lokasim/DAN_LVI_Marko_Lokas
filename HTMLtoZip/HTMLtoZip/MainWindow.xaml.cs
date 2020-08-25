@@ -156,7 +156,16 @@ namespace HTMLtoZip
         /// <param name="e"></param>
         private void BtnOpen_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start(directoryRoot);
+            
+            if (Directory.Exists(directoryRoot))
+            {
+                Process.Start(directoryRoot);
+            }
+            else
+            {
+                Xceed.Wpf.Toolkit.MessageBox.Show("The document does not currently exist", "First Download site and zipped", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
         }
 
         /// <summary>
@@ -166,7 +175,16 @@ namespace HTMLtoZip
         /// <param name="e"></param>
         private void BtnOpenZip_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start(@"..\..\ZipWebsite");
+            if (Directory.Exists(@"..\..\ZipWebsite"))
+            {
+                Process.Start(@"..\..\ZipWebsite");
+            }
+            else
+            {
+                Xceed.Wpf.Toolkit.MessageBox.Show("The document does not currently exist", "First Download site and zipped", MessageBoxButton.OK, MessageBoxImage.Information);
+                return;
+            }
+            
         }
     }
 }
