@@ -133,7 +133,7 @@ namespace HTMLtoZip
                         if (!File.Exists(zipPathCounter))
                         {
                             //Ziping found documents
-                            ZipFile.CreateFromDirectory(startPath, zipPathCounter, CompressionLevel.Fastest, true);
+                            ZipFile.CreateFromDirectory(startPath, zipPathCounter);
                             Xceed.Wpf.Toolkit.MessageBox.Show("You have successfully zipped files.", "Successfully zip files", MessageBoxButton.OK);
                             break;
                         }
@@ -142,6 +142,7 @@ namespace HTMLtoZip
                 else
                 {
                     ZipFile.CreateFromDirectory(startPath, zipPath);
+                    Xceed.Wpf.Toolkit.MessageBox.Show("You have successfully zipped files.", "Successfully zip files", MessageBoxButton.OK);
                 }
             }
             catch (Exception)
