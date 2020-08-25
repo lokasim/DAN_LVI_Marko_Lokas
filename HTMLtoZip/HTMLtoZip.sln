@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1022
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HTMLtoZip", "HTMLtoZip\HTMLtoZip.csproj", "{72A11773-9285-4538-AF9E-41055CB5852B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72A11773-9285-4538-AF9E-41055CB5852B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A11773-9285-4538-AF9E-41055CB5852B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A11773-9285-4538-AF9E-41055CB5852B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A11773-9285-4538-AF9E-41055CB5852B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7D81647D-227A-4D8F-AC2A-DCBEB1EDBDDC}
+	EndGlobalSection
+EndGlobal
