@@ -1,4 +1,3 @@
-C:\Users\panonit\Desktop\DAN_LVI_Marko_Lokas\HTMLtoZip\HTMLtoZip\obj\Debug\HTMLtoZip.csprojAssemblyReference.cache
 C:\Users\panonit\Desktop\DAN_LVI_Marko_Lokas\HTMLtoZip\HTMLtoZip\obj\Debug\MainWindow.g.cs
 C:\Users\panonit\Desktop\DAN_LVI_Marko_Lokas\HTMLtoZip\HTMLtoZip\obj\Debug\HTMLtoZip_MarkupCompile.cache
 C:\Users\panonit\Desktop\DAN_LVI_Marko_Lokas\HTMLtoZip\HTMLtoZip\obj\Debug\HTMLtoZip_MarkupCompile.lref
@@ -36,3 +35,5 @@ C:\Users\panonit\Desktop\DAN_LVI_Marko_Lokas\HTMLtoZip\HTMLtoZip\obj\Debug\HTMLt
 C:\Users\panonit\Desktop\DAN_LVI_Marko_Lokas\HTMLtoZip\HTMLtoZip\obj\Debug\HTMLtoZip.csproj.CopyComplete
 C:\Users\panonit\Desktop\DAN_LVI_Marko_Lokas\HTMLtoZip\HTMLtoZip\obj\Debug\HTMLtoZip.exe
 C:\Users\panonit\Desktop\DAN_LVI_Marko_Lokas\HTMLtoZip\HTMLtoZip\obj\Debug\HTMLtoZip.pdb
+C:\Users\panonit\Desktop\DAN_LVI_Marko_Lokas\HTMLtoZip\HTMLtoZip\bin\Debug\System.IO.Compression.ZipFile.dll
+C:\Users\panonit\Desktop\DAN_LVI_Marko_Lokas\HTMLtoZip\HTMLtoZip\obj\Debug\HTMLtoZip.csprojAssemblyReference.cache

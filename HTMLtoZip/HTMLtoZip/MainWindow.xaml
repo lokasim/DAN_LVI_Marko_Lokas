@@ -5,10 +5,102 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HTMLtoZip"
         mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize"
-        Title="HTML TO ZIP" Height="450" Width="800">
+        Title="HTML TO ZIP" Height="450" Width="400">
     <Grid>
-        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBox Margin="0,0,0,0"
+                         ToolTip="Input website."
+                         HorizontalContentAlignment="Left"
+                         x:Name="txtAdress"
+                         materialDesign:HintAssist.Hint="Input website address"
+                         Width="300"
+                         Height="50"
+                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"
+                         VerticalAlignment="Bottom"
+                         FontSize="14"></TextBox>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Button Style="{StaticResource MaterialDesignRaisedButton}"
+                        x:Name="btnDownload"
+                        materialDesign:ButtonAssist.CornerRadius="0 0 20 20"
+                        IsDefault="True"
+                        Height="45"
+                        VerticalAlignment="Top"
+                        Panel.ZIndex="1"
+                        FontWeight="Bold"
+                        FontSize="18"
+                        Foreground="White"
+                        Width="300"
+                        Margin="0 1 0 0"
+                        Command="{Binding Login, UpdateSourceTrigger=PropertyChanged}"
+                        Click="BtnDownload_Click">Download HTML</Button>
+            </Grid>
+            <Grid Grid.Row="2">
+                <Button Style="{StaticResource MaterialDesignRaisedButton}"
+                        x:Name="btnZip"
+                        materialDesign:ButtonAssist.CornerRadius="20 20 20 20"
+                        IsDefault="True"
+                        Height="45"
+                        VerticalAlignment="Top"
+                        Panel.ZIndex="1"
+                        FontWeight="Bold"
+                        FontSize="18"
+                        Foreground="White"
+                        Width="150"
+                        Margin="0 1 0 0"
+                        Command="{Binding Login, UpdateSourceTrigger=PropertyChanged}"
+                        Click="BtnZip_Click">Zip files</Button>
+                <TextBlock Width="300"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center" x:Name="zipovaniIspis"></TextBlock>
+            </Grid>
+            <Grid Grid.Row="3">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                
+                <Button Style="{StaticResource MaterialDesignRaisedButton}"
+                        x:Name="btnOpen"
+                        Grid.Column="0"
+                        materialDesign:ButtonAssist.CornerRadius="20 20 20 20"
+                        IsDefault="True"
+                        Height="45"
+                        VerticalAlignment="Top"
+                        Panel.ZIndex="1"
+                        FontWeight="Bold"
+                        FontSize="16"
+                        Foreground="White"
+                        Width="150"
+                        Margin="0 1 0 0"
+                        Command="{Binding Login, UpdateSourceTrigger=PropertyChanged}"
+                        Click="BtnOpen_Click">View folder</Button>
+                <Button Style="{StaticResource MaterialDesignRaisedButton}"
+                        x:Name="btnOpenZip"
+                        Grid.Column="1"
+                        materialDesign:ButtonAssist.CornerRadius="20 20 20 20"
+                        IsDefault="True"
+                        Height="45"
+                        VerticalAlignment="Top"
+                        Panel.ZIndex="1"
+                        FontWeight="Bold"
+                        FontSize="16"
+                        Foreground="White"
+                        Width="150"
+                        Margin="0 1 0 0"
+                        Command="{Binding Login, UpdateSourceTrigger=PropertyChanged}"
+                        Click="BtnOpenZip_Click">View Zip folder</Button>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>
